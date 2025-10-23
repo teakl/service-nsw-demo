@@ -5,6 +5,7 @@ on:
     branches: [main, master, "feature/**"]
   pull_request:
     branches: [main, master, "feature/**"]
+
 jobs:
   test:
     timeout-minutes: 60
@@ -19,8 +20,15 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: Run Playwright tests
-        run: npx github-actions-ctrf ctrf/ctrf-report.json --fail-on-error
+      - name: Run Playwright tests via CTRF
+        run: |
+          npx github-actions-ctrf ctrf/ctrf-report.json
+          FAILS=$(jq '.summary.failed' ctrf/ctrf-report.json)
+          echo "Test failures: $FAILS"
+          if [ "$FAILS" -gt 0 ]; then
+            echo "Tests failed, failing workflow."
+            exit 1
+          fi
 
       - name: Upload CTRF report
         uses: actions/upload-artifact@v4
