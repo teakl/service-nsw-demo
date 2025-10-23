@@ -1,0 +1,77 @@
+{
+  "reportFormat": "CTRF",
+  "specVersion": "0.0.0",
+  "reportId": "2f8ee0eb-a5e8-4630-8d3c-601427dfee21",
+  "timestamp": "2025-10-23T13:44:04.002Z",
+  "generatedBy": "playwright-ctrf-json-reporter",
+  "results": {
+    "tool": {
+      "name": "playwright"
+    },
+    "summary": {
+      "tests": 2,
+      "passed": 1,
+      "failed": 1,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "start": 1761227044079,
+      "stop": 1761227168324,
+      "suites": 0
+    },
+    "tests": [
+      {
+        "name": "Should return personal and alternate names",
+        "status": "passed",
+        "duration": 1097,
+        "start": 1761227047,
+        "stop": 1761227048,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/Users/nguyentran/Documents/Teak Ly/Code/Service.NSW.Demo/tests/apiTest.spec.ts",
+        "retries": 0,
+        "flaky": false,
+        "steps": [],
+        "suite": "chromium > apiTest.spec.ts",
+        "attachments": [],
+        "stdout": [
+          "{\n  name: \u001b[32m'Sachi Routray'\u001b[39m,\n  bio: {\n    type: \u001b[32m'/type/text'\u001b[39m,\n    value: \u001b[32m'Sachidananda Routray (13 May 1916 – 21 August 2004) was an Indian poet, novelist and short-story writer who wrote in Odia. He received Jnanpith Award, the highest literary award of India, in 1986. He was popularly known as Sachi Routray.'\u001b[39m\n  },\n  personal_name: \u001b[32m'Sachi Rautroy'\u001b[39m,\n  death_date: \u001b[32m'2004'\u001b[39m,\n  alternate_names: [\n    \u001b[32m'Satchidananda Raut Roy'\u001b[39m,\n    \u001b[32m'Satchidananda Raut-Roy'\u001b[39m,\n    \u001b[32m'Satchidananda Rautroy'\u001b[39m,\n    \u001b[32m'Satchi Raut Roy'\u001b[39m,\n    \u001b[32m'Satchi Raut-Roy'\u001b[39m,\n    \u001b[32m'Satchi Rautroy'\u001b[39m,\n    \u001b[32m'Saccidānanda Rāutarāẏa'\u001b[39m,\n    \u001b[32m'Yugashrashta Sachi Routray'\u001b[39m,\n    \u001b[32m'Sacci Rāutarāẏa'\u001b[39m,\n    \u001b[32m'Sachidananda Routray'\u001b[39m,\n    \u001b[32m'Rāutarāẏa, Saccidānanda'\u001b[39m,\n    \u001b[32m'ସଚ୍ଚିଦାନନ୍ଦ ରାଉତରାୟ ଓଡ଼ିଆ ଲେଖକ'\u001b[39m,\n    \u001b[32m'Sachi Rautroy'\u001b[39m\n  ],\n  birth_date: \u001b[32m'1916'\u001b[39m,\n  type: { key: \u001b[32m'/type/author'\u001b[39m },\n  remote_ids: {\n    wikidata: \u001b[32m'Q5320436'\u001b[39m,\n    isni: \u001b[32m'0000000119387514'\u001b[39m,\n    viaf: \u001b[32m'107786978'\u001b[39m,\n    lc_naf: \u001b[32m'n89283686'\u001b[39m\n  },\n  photos: [ \u001b[33m11538051\u001b[39m ],\n  key: \u001b[32m'/authors/OL1A'\u001b[39m,\n  latest_revision: \u001b[33m14\u001b[39m,\n  revision: \u001b[33m14\u001b[39m,\n  created: { type: \u001b[32m'/type/datetime'\u001b[39m, value: \u001b[32m'2008-04-01T03:28:50.625462'\u001b[39m },\n  last_modified: { type: \u001b[32m'/type/datetime'\u001b[39m, value: \u001b[32m'2025-06-12T17:03:38.232232'\u001b[39m }\n}\n"
+        ],
+        "stderr": [],
+        "extra": {
+          "annotations": []
+        }
+      },
+      {
+        "name": "Calculate Stamp Duty",
+        "status": "failed",
+        "duration": 120056,
+        "start": 1761227047,
+        "stop": 1761227167,
+        "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+        "trace": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+        "rawStatus": "timedOut",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/Users/nguyentran/Documents/Teak Ly/Code/Service.NSW.Demo/tests/stampDuty.spec.ts",
+        "retries": 0,
+        "flaky": false,
+        "steps": [],
+        "suite": "chromium > stampDuty.spec.ts",
+        "attachments": [
+          {
+            "name": "error-context",
+            "contentType": "text/markdown",
+            "path": "/Users/nguyentran/Documents/Teak Ly/Code/Service.NSW.Demo/test-results/stampDuty-Calculate-Stamp-Duty-chromium/error-context.md"
+          }
+        ],
+        "stdout": [],
+        "stderr": [],
+        "extra": {
+          "annotations": []
+        }
+      }
+    ]
+  }
+}
