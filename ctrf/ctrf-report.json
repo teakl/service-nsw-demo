@@ -1,8 +1,8 @@
 {
   "reportFormat": "CTRF",
   "specVersion": "0.0.0",
-  "reportId": "35f1957c-542a-4ea4-a7b4-a154df8817ab",
-  "timestamp": "2025-10-23T14:16:46.536Z",
+  "reportId": "10dad153-f2be-493e-b65b-d189eeeca366",
+  "timestamp": "2025-10-23T14:35:09.165Z",
   "generatedBy": "playwright-ctrf-json-reporter",
   "results": {
     "tool": {
@@ -15,17 +15,17 @@
       "pending": 0,
       "skipped": 0,
       "other": 0,
-      "start": 1761229006626,
-      "stop": 1761229021762,
+      "start": 1761230109532,
+      "stop": 1761230157054,
       "suites": 0
     },
     "tests": [
       {
         "name": "Should return personal and alternate names",
         "status": "passed",
-        "duration": 5766,
-        "start": 1761229009,
-        "stop": 1761229015,
+        "duration": 7400,
+        "start": 1761230121,
+        "stop": 1761230129,
         "rawStatus": "passed",
         "tags": [],
         "type": "e2e",
@@ -46,9 +46,9 @@
       {
         "name": "Calculate Stamp Duty",
         "status": "passed",
-        "duration": 11034,
-        "start": 1761229009,
-        "stop": 1761229020,
+        "duration": 29397,
+        "start": 1761230121,
+        "stop": 1761230151,
         "rawStatus": "passed",
         "tags": [],
         "type": "e2e",
