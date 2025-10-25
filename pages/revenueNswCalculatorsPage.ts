@@ -48,12 +48,7 @@ export class revenueNswCalculatorsPage {
   async verifyStampDutyDetails() {
     await this.modalBody.waitFor({ state: "visible" });
 
-    const modalRow = this.modalBody.locator("tr", {
-      hasText: "Duty payable",
-    });
-
-    await modalRow.waitFor({ state: "visible", timeout: 20000 });
-    await // Assert passenger vehicle
+    // Assert passenger vehicle
     await expect(
       this.modalBody.locator("tr", {
         hasText: "Is this registration for a passenger vehicle?",
@@ -66,6 +61,8 @@ export class revenueNswCalculatorsPage {
     ).toContainText("$35,000.00");
 
     // Assert duty payable
-    await expect(modalRow).toContainText("$1,050.00");
+    await expect(
+      this.modalBody.locator("tr", { hasText: "Duty payable" })
+    ).toContainText("$1,050.00");
   }
 }
