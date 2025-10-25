@@ -1,8 +1,8 @@
 {
   "reportFormat": "CTRF",
   "specVersion": "0.0.0",
-  "reportId": "10dad153-f2be-493e-b65b-d189eeeca366",
-  "timestamp": "2025-10-23T14:35:09.165Z",
+  "reportId": "02c4d2d9-7ae0-464d-ba2e-406e089c4882",
+  "timestamp": "2025-10-25T22:00:25.607Z",
   "generatedBy": "playwright-ctrf-json-reporter",
   "results": {
     "tool": {
@@ -10,22 +10,22 @@
     },
     "summary": {
       "tests": 2,
-      "passed": 2,
-      "failed": 0,
+      "passed": 1,
+      "failed": 1,
       "pending": 0,
       "skipped": 0,
       "other": 0,
-      "start": 1761230109532,
-      "stop": 1761230157054,
+      "start": 1761429625645,
+      "stop": 1761429747712,
       "suites": 0
     },
     "tests": [
       {
         "name": "Should return personal and alternate names",
         "status": "passed",
-        "duration": 7400,
-        "start": 1761230121,
-        "stop": 1761230129,
+        "duration": 680,
+        "start": 1761429627,
+        "stop": 1761429627,
         "rawStatus": "passed",
         "tags": [],
         "type": "e2e",
@@ -45,11 +45,13 @@
       },
       {
         "name": "Calculate Stamp Duty",
-        "status": "passed",
-        "duration": 29397,
-        "start": 1761230121,
-        "stop": 1761230151,
-        "rawStatus": "passed",
+        "status": "failed",
+        "duration": 120064,
+        "start": 1761429627,
+        "stop": 1761429747,
+        "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+        "trace": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+        "rawStatus": "timedOut",
         "tags": [],
         "type": "e2e",
         "filePath": "/Users/nguyentran/Documents/Teak Ly/Code/Service.NSW.Demo/tests/stampDuty.spec.ts",
@@ -57,7 +59,13 @@
         "flaky": false,
         "steps": [],
         "suite": "chromium > stampDuty.spec.ts",
-        "attachments": [],
+        "attachments": [
+          {
+            "name": "error-context",
+            "contentType": "text/markdown",
+            "path": "/Users/nguyentran/Documents/Teak Ly/Code/Service.NSW.Demo/test-results/stampDuty-Calculate-Stamp-Duty-chromium/error-context.md"
+          }
+        ],
         "stdout": [],
         "stderr": [],
         "extra": {
